@@ -15,7 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    protected Button OpenBtn, CloseBtn;
+    protected Button OpenBtn, CloseBtn, btn;
     protected CheckBox checkboxLock;
     protected TextView contentTextview;
     ListView listview = null;
@@ -24,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btn = (Button)findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
 /*
         final String[] items = {"WHITE", "RED", "GREEN", "BLUE", "BLACK"} ;
